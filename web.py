@@ -29,7 +29,7 @@ st.title('Image segmentation')
 st.subheader('Self-driven car')
 
 LOCAL =  'http://127.0.0.1:5000/api'
-SERVER = 'https://strong-return-374312.ew.r.appspot.com/api'
+SERVER = 'http://kind-rock-b8b1eb7b06f34e7c8fcee02f3d8dfd09.azurewebsites.net/api'
 APP = LOCAL
 
 x_test_dir = 'images.txt'
@@ -57,7 +57,6 @@ if submit_button:
 
         resp = requests.get(APP, params={"image_id": option}, headers={'Content-Type': 'application/octet-stream'})
 
-        print(resp.content)
         pr_mask = uncompress_nparr(resp.content) # predicted mask
 
         col1, col2, col3 = st.columns(3)

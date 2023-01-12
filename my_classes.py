@@ -1,8 +1,6 @@
 import numpy as np
 import pandas as pd
 from PIL import Image
-import albumentations as aug
-
 
 
 # classes for data loading and preprocessing
