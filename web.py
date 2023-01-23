@@ -32,8 +32,9 @@ LOCAL =  'http://127.0.0.1:5000/api'
 LOCAL_DOCKER = 'http://172.17.0.2:5000/api'
 SERVER = 'http://kind-rock-b8b1eb7b06f34e7c8fcee02f3d8dfd09.azurewebsites.net/api'
 SERVER_HEROKU = 'https://api-oc8-img-seg.herokuapp.com/api'
+SERVER_GOOGLERUN = 'https://autcar-img-dyu56zxquq-uc.a.run.app/api'
 
-APP = LOCAL_DOCKER
+APP = SERVER_GOOGLERUN
 
 x_test_dir = 'images.txt'
 y_test_dir = 'mask.txt'
